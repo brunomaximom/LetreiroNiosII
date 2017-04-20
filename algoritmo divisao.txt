@@ -1,0 +1,19 @@
+
+divisao:
+bgt divisor, dividendo, UM
+ZERO:
+addi result, 0
+br PULA
+
+UM:
+addi result, 1
+
+PULA:
+sub divisor, divisor, dividendo
+
+bgt divisor, dividendo, FIM
+slli result, result, 1
+br DIVISAO
+
+FIM:
+

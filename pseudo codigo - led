@@ -1,0 +1,17 @@
+
+	SegundoDigito = ler UART();
+	if (SegundoDigito == '0')
+		TrataAcendeLED;
+	else if (SegundoDigito == '1')
+		ApagaLED;
+	
+	AcendeLED:
+	TerceiroDigito = ler UART();
+	Resultado = 10xTerceiroDigito;
+	QuartoDigito = ler UART();
+	Resultado =  Resultado + QuartoDigito;
+	AcendeLed(Endereço Led(Resultado));
+	
+	
+/*
+	

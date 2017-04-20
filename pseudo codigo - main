@@ -1,0 +1,20 @@
+while(1){
+
+	Mostra "Entra com o comando:"
+	PrimeiroDigito = ler UART();
+	if (PrimeiroDigito == '0')
+		TrataLED;				/*piscaled.s*/
+	else if (PrimeiroDigito == '1')
+		TrataTriangular;		/*triangular.s*/
+	else if (PrimeiroDigito == '2')
+		TrataRotacao;			/*rotacao.s*/
+		
+}
+
+
+
+
+/*
+	tratar ret por stack frame
+	arrumar menu lusitano
+*/
